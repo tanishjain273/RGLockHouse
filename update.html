@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RG LockHouse | Catalogue Update Helper</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero hero-small">
+      <nav class="nav">
+        <div class="brand">RG LockHouse</div>
+        <div class="nav-links">
+          <a href="index.html">Back to catalogue</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <h1>Catalogue update helper</h1>
+        <p>
+          Add your product details below, then download a fresh
+          <strong>products.json</strong> file.
+        </p>
+      </div>
+    </header>
+
+    <main class="section">
+      <section class="admin-panel">
+        <div class="section-header">
+          <h2>1) Add a product</h2>
+          <p>Fill in the fields and click “Add product”. Repeat for each item.</p>
+        </div>
+        <form id="product-form" class="form-grid">
+          <label>
+            Product ID
+            <input type="text" name="id" placeholder="RG-007" required />
+          </label>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Classic Metal Tag" required />
+          </label>
+          <label>
+            Category
+            <input type="text" name="category" placeholder="Metallic" required />
+          </label>
+          <label class="full-width">
+            Image URL
+            <input
+              type="url"
+              name="image"
+              placeholder="https://..."
+              required
+            />
+          </label>
+          <label class="full-width">
+            Description
+            <textarea name="description" rows="3" placeholder="Short product description" required></textarea>
+          </label>
+          <button class="primary-button" type="submit">Add product</button>
+        </form>
+      </section>
+
+      <section class="admin-panel">
+        <div class="section-header">
+          <h2>2) Review your list</h2>
+        </div>
+        <div id="product-list" class="product-list"></div>
+      </section>
+
+      <section class="admin-panel">
+        <div class="section-header">
+          <h2>3) Export the JSON file</h2>
+          <p>
+            Click “Download products.json” and replace the existing file inside the
+            <code>data</code> folder on your website.
+          </p>
+        </div>
+        <div class="button-row">
+          <button id="copy-json" class="secondary-button" type="button">Copy JSON</button>
+          <button id="download-json" class="primary-button" type="button">
+            Download products.json
+          </button>
+        </div>
+        <label class="full-width">
+          JSON preview
+          <textarea id="json-output" rows="12" readonly></textarea>
+        </label>
+      </section>
+
+      <section class="admin-panel">
+        <div class="section-header">
+          <h2>Optional: Load existing JSON</h2>
+          <p>Paste your current products.json here and click “Load JSON”.</p>
+        </div>
+        <label class="full-width">
+          Existing JSON
+          <textarea id="import-json" rows="8" placeholder="Paste existing JSON here"></textarea>
+        </label>
+        <button id="load-json" class="secondary-button" type="button">Load JSON</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>RG LockHouse © 2024. This helper runs locally in your browser.</p>
+    </footer>
+
+    <script src="update.js"></script>
+  </body>
+</html>
