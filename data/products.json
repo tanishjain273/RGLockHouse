@@ -1,0 +1,44 @@
+[
+  {
+    "id": "RG-001",
+    "name": "Brushed Steel Tag",
+    "description": "Minimalist steel keychain with a brushed finish and laser-engraving area for logos.",
+    "image": "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=80",
+    "category": "Metallic"
+  },
+  {
+    "id": "RG-002",
+    "name": "Soft Touch Leather Loop",
+    "description": "Hand-stitched leather loop available in multiple colors for premium gifting.",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    "category": "Leather"
+  },
+  {
+    "id": "RG-003",
+    "name": "Acrylic Logo Charm",
+    "description": "Crystal-clear acrylic charm with full-color logo print and glossy finish.",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
+    "category": "Acrylic"
+  },
+  {
+    "id": "RG-004",
+    "name": "Eco Bamboo Disc",
+    "description": "Sustainable bamboo disc with laser branding and a matte sealant coating.",
+    "image": "https://images.unsplash.com/photo-1459478309853-2c33a60058e7?auto=format&fit=crop&w=800&q=80",
+    "category": "Eco"
+  },
+  {
+    "id": "RG-005",
+    "name": "Soft PVC Character",
+    "description": "Custom-molded PVC keychain for mascots, product launches, and events.",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    "category": "PVC"
+  },
+  {
+    "id": "RG-006",
+    "name": "Premium Bottle Opener",
+    "description": "Dual-purpose keychain with bottle opener and brushed metal plating.",
+    "image": "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80",
+    "category": "Utility"
+  }
+]
